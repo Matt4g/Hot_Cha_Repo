@@ -7,7 +7,7 @@ const loader = new THREE.ObjectLoader();
 
 loader.load(
 	// resource URL
-	"../models/Cheese head.obj",
+	"../models/Cheesehead.obj",
 
 	// onLoad callback
 	// Here the loaded data is assumed to be an object
