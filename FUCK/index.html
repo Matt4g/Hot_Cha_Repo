@@ -85,12 +85,11 @@
   * @param {obj} renderer: the three.js renderer for the scene
   **/
 
-  function getControls(camera, renderer) {
+  
     var controls = new THREE.TrackballControls(camera, renderer.domElement);
     controls.zoomSpeed = 0.4;
-    controls.panSpeed = 0.4;
-    return controls;
-  }
+    controls.panSpeed = 400;
+
 
   /**
   * Load Nimrud model
@@ -119,7 +118,7 @@
   var camera = getCamera();
   var light = getLight(scene);
   var renderer = getRenderer();
-  var controls = getControls(camera, renderer);
+  
 
   loadModel()
 
